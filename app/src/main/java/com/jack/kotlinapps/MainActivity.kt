@@ -16,14 +16,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var intArr:IntArray = IntArray(10)
-
-        intArr[0] = 10
-        intArr[1] = 20
-
-        intArr[9] = 110
-
-        Log.d("arr","${intArr[9]}")
+        var mutableList = mutableListOf<Int>()
 
 
 
@@ -58,3 +51,15 @@ class MainActivity : AppCompatActivity() {
 //            1,19 -> Log.d("when","9월")
 //        }
 
+//        var intArr:IntArray = IntArray(10)
+//
+//        intArr[0] = 10
+//        intArr[1] = 20
+//
+//        intArr[9] = 110
+//
+//        Log.d("arr","${intArr[9]}")
+//
+//        mutableList.add(4)
+//
+//        Log.d("컬렉션","값=${mutableList.get(0)}")
