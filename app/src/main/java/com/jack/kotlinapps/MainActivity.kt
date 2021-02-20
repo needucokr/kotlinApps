@@ -8,8 +8,6 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.math.log
 
 
-
-
 class MainActivity : AppCompatActivity() {
 
     val Tag = "MainActivity"
@@ -18,25 +16,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var IsName:String = "JackSparrow"
+        var intArr:IntArray = IntArray(10)
 
-//        Log.d("name","${IsName}")
+        intArr[0] = 10
+        intArr[1] = 20
 
-        var month = 7
-//        if(month > 9) {
-//            Log.d("if", "가을")
-//        }else if(month > 6 && month < 9) {
-//            Log.d("if","여름")
-//        }else  {
-//            Log.d("if", "겨울")
-//        }
+        intArr[9] = 110
 
-        //when == swtich
+        Log.d("arr","${intArr[9]}")
 
-        when(month){
-            6,7,12 -> Log.d("when","6월")
-            9 -> Log.d("when","9월")
-        }
 
 
        }
@@ -50,4 +38,23 @@ class MainActivity : AppCompatActivity() {
 //      var booleanValue:Boolean = true
 //
 
+//       var IsName:String = "JackSparrow"
+
+//        Log.d("name","${IsName}")
+
+//        var month = 7
+//        if(month > 9) {
+//            Log.d("if", "가을")
+//        }else if(month > 6 && month < 9) {
+//            Log.d("if","여름")
+//        }else  {
+//            Log.d("if", "겨울")
+//        }
+
+//when == swtich
+
+//        when(month){
+//            6,7,12 -> Log.d("when","6월")
+//            1,19 -> Log.d("when","9월")
+//        }
 
